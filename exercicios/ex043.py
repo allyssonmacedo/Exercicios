@@ -1,2 +1,7 @@
-#Elabore um programa que calcule o valor a ser pago por um produto, considerando o seu preço normal e condição de pagamento:
-#A vista dinheiro: 10% de desconto ; à vista no cartão: 5% de desconto ; em até 2x no cartão: preço normal ; 3x ou mais no cartão : 20% de juros
+
+#Desenvolva uma lógica que leia o peso e a altura de uma pessoa, calcule seu IMC e mostre seu status de acordo com a tabela abaixo:
+#Abaixo de 18.5: Abaixo do peso
+#Entre 18.5 a 25: Peso Ideal
+#25 até 30: Sobrepeso
+#30 até 40: Obesidade
+#Acima de 40: Obesidade mórbida

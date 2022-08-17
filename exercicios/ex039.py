@@ -1,12 +1,19 @@
-#Crie um programa que leia 2 notas de um aluno e calcule a sua média, mostrando se media abaixo de 5 reprovado, 5 a 6.9 recuperação, superior a 7 aprovado
+#Faça um programa que leia o ano de nascimento de um jovem e informe de acordo com a sua idade se ele ainda vai se alistar ao serviço militar, se é hora de se alistar ou se já passou do tempo do alistamento.
+#Seu programa também deverá mostrar o tempo que falta ou que passou do prazo.
 
-n1 = float(input('Qual a primeira nota? '))
-n2 = float(input('Qual a segunda nota? '))
-media = (n1 + n2) / 2
+import datetime
 
-if media < 5:
-    print(f'Sua média foi {media}. Você está reprovado')
-elif media >= 5 and media < 7:
-    print(f'Sua média foi {media}. Você está de recuperação')
-else:
-    print(f'Sua média foi {media}. Você está aprovado')
+ano_nasc = int(input('Em que ano você nasceu? '))
+atual = datetime.datetime.today().year
+idade =  atual - ano_nasc
+
+if idade == 18:
+    print('Você deverá se alistar ainda este ano')
+elif idade < 18:
+    anos_para_alistamento = 18 - idade
+    print(f'Você ainda tem {anos_para_alistamento} anos para se alistar')
+    print(f'Seu alistamento será em {atual + anos_para_alistamento}')
+elif idade > 18:
+    anos = idade - 18
+    print(f'Você já deveria ter se alistado há {anos} anos atrás')
+    print(f'Seu alistamento foi em {atual - anos}')

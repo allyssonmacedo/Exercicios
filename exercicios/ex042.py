@@ -1,7 +1,22 @@
+#Refaça o desafio 035 dos triângulos, acrescetando o recurso de mostrar que tipo de triângulo será formado:
+#Equilátero: todos os lados iguais
+#Isósceles: dois lados iguais
+#Escaleno : todos os lados diferentes
 
-#Desenvolva uma lógica que leia o peso e a altura de uma pessoa, calcule seu IMC e mostre seu status de acordo com a tabela abaixo:
-#Abaixo de 18.5: Abaixo do peso
-#Entre 18.5 a 25: Peso Ideal
-#25 até 30: Sobrepeso
-#30 até 40: Obesidade
-#Acima de 40: Obesidade mórbida
+
+a = float(input('Digite o primeiro segmento: '))
+b = float(input('Digite o segundo segmento: '))
+c = float(input('Digite o terceiro segmento: '))
+
+if a < b + c and b < a + c and c < a + b:
+    print('Os segmentos acima podem formar um triângulo')
+    if a != b and b != c and a != c:
+        print('O triângulo é escaleno')
+    elif a == b == c:
+        print('O triângulo é equilátero')
+    else:
+        print('O triângulo é isósceles')
+
+else:
+    print('Os segmentos acima não formam um triângulo')
+

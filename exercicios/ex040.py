@@ -1,19 +1,12 @@
-#A Confederação Nacional de Natação precisa de um programa que leia o ano de nascimento de um atleta e mostra a sua categoria, de acordo com a idade:
-#Até 9 anos: mirin ; até 14: infantil ;  até 19 anos: Junior ; Até 20 anos : Sênior ; Acima : Master
+#Crie um programa que leia 2 notas de um aluno e calcule a sua média, mostrando se media abaixo de 5 reprovado, 5 a 6.9 recuperação, superior a 7 aprovado
 
-import datetime
+n1 = float(input('Qual a primeira nota? '))
+n2 = float(input('Qual a segunda nota? '))
+media = (n1 + n2) / 2
 
-ano_nasc = int(input('Em que ano você nasceu? '))
-idade = datetime.datetime.today().year - ano_nasc
-print(f'Sua idade é {idade}')
-
-if idade <= 9:
-    print('Categoria Mirim')
-elif idade <= 14:
-    print('Categoria Infantil')
-elif idade <= 19:
-    print('Categoria Junior')
-elif idade <= 20:
-    print('Categoria Sênior')
-elif idade > 20:
-    print('Categoria Master')
+if media < 5:
+    print(f'Sua média foi {media}. Você está reprovado')
+elif media >= 5 and media < 7:
+    print(f'Sua média foi {media}. Você está de recuperação')
+else:
+    print(f'Sua média foi {media}. Você está aprovado')
