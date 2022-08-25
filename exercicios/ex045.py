@@ -15,11 +15,19 @@ while True:
         item = 'Papel'
     elif escolha == 3:
         item = 'Tesoura'
+    else:
+        print('Favor, escolha o seu movimento')
+        escolha = int(input('Digite o número correspondente: '))
 
-    time.sleep(1)
-    print('O computador está escolhendo...')
-    time.sleep(3)
+    print('JO')
+    time.sleep(0.5)
+    print('KEN')
+    time.sleep(0.5)
+    print('PO!!!')
+    time.sleep(0.5)
     computador = random.randint(1,3)
+
+    print('-=-' * 20)
 
 
     if computador == 1:
@@ -37,6 +45,8 @@ while True:
         print(f'[Computador escolheu {item_comp}]Parabéns, você ganhou.')
     else:
         print(f'[Computador escolheu {item_comp}] Você perdeu, o computador ganhou.')
+
+    print('-=-' * 20)
 
     novo = str(input('Deseja jogar novamente? S/N '))
     if novo == 'S' or novo == 's':
