@@ -1,0 +1,1 @@
+# Melhore o jogo do desafio 028 onde o computador vai "pensar" em um número entre 0 e 10. Sò que agora o jogador vai tentar adivinhar até acertar, mosrando no final quantos palpites foram necessários para vencer.
