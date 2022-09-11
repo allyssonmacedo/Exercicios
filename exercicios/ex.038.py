@@ -1,1 +1,0 @@
-#Escreva um programa que leia 2 números inteiros e compare-os, mostrando a mensagem se o primeiro é maior, ou o segundo maior, ou os 2 iguais
